@@ -22,9 +22,14 @@ number_roots solver(struct Coeff coef, struct Answer* root_ptr)
                 root_ptr->nroot = NO_ROOTS;
             }
         }
-        else
+        else if(!compare_small(coef.c, 0))
         {
             root_ptr->x1 = (-coef.c) / coef.b;
+            root_ptr->nroot = ONE_ROOT;
+        }
+        else
+        {
+            root_ptr->x1 = 0;
             root_ptr->nroot = ONE_ROOT;
         }
     }
