@@ -1,5 +1,5 @@
-#include "../include/input.h"
-#include "../include/library.h"
+#include "input.h"
+#include "library.h"
 
 prog_errors coef_input(struct Coeff* coef_ptr)                                           //ввод с клавы
 {

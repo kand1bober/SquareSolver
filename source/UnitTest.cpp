@@ -1,7 +1,7 @@
-#include "../include/UnitTest.h"
-#include "../include/library.h"
-#include "../include/compare.h"
-#include "../include/solver.h"
+#include "UnitTest.h"
+#include "library.h"
+#include "compare.h"
+#include "solver.h"
 
 
 void driver(struct Test test_arr[])

@@ -1,9 +1,11 @@
 
-#include "../include/library.h"
-#include "../include/solver.h"
-#include "../include/input.h"
-#include "../include/output.h"
-#include "../include/UnitTest.h"
+#include "library.h"
+#include "solver.h"
+#include "input.h"
+#include "output.h"
+#include "UnitTest.h"
+
+
 
 /*
 #ifdef CLEAN
@@ -13,11 +15,24 @@
 #endif
 */
 
+/**
+* gfytftyftygftygyt
+    \brief hggfhg
+    \param a, b, c -- Coefficients of square equation
+*\param[out] dest Целевая область памяти
+*\param[in] src Исходная область памяти
+*\param[in] n Количество байтов, которые необходимо скопировать
+*
+*
+*
+*
+*/
+
 int main(int argc, char* argv[])
 {
-     struct Coeff coef = {0, 0, 0};          // структура
-     struct Answer root = {NO_ROOTS, 0, 0};
-     struct Test test_arr[] =
+    struct Coeff coef = {0, 0, 0};          // структура
+    struct Answer root = {NO_ROOTS, 0, 0};
+    struct Test test_arr[] =
     {
         {1, 4, 3.98, -1.858579, -2.141421, 1},
         {1, 5,    6,        -2,        -3, 2},

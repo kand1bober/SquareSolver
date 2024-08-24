@@ -1,5 +1,7 @@
-#include "../include/output.h"
-#include "../include/library.h"
+#include "output.h"
+#include "library.h"
+
+
 
 void print_answer(struct Answer* print)
 {
