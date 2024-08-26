@@ -75,7 +75,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>MAin header file.  
+<p>Main header file.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;iostream&gt;</code><br />
 <code>#include &lt;stdio.h&gt;</code><br />
@@ -83,18 +83,20 @@ $(function() {
 <code>#include &lt;stdbool.h&gt;</code><br />
 <code>#include &lt;assert.h&gt;</code><br />
 <code>#include &lt;string.h&gt;</code><br />
+<code>#include &lt;stdarg.h&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for library.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="library_8h__incl.png" border="0" usemap="#ainclude_2library_8h" alt=""/></div>
 <map name="ainclude_2library_8h" id="ainclude_2library_8h">
-<area shape="rect" title="MAin header file." alt="" coords="221,5,347,32"/>
+<area shape="rect" title="Main header file." alt="" coords="272,5,397,32"/>
 <area shape="rect" title=" " alt="" coords="5,80,85,107"/>
 <area shape="rect" title=" " alt="" coords="109,80,176,107"/>
 <area shape="rect" title=" " alt="" coords="201,80,269,107"/>
 <area shape="rect" title=" " alt="" coords="293,80,376,107"/>
 <area shape="rect" title=" " alt="" coords="400,80,475,107"/>
 <area shape="rect" title=" " alt="" coords="499,80,570,107"/>
+<area shape="rect" title=" " alt="" coords="595,80,669,107"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -102,16 +104,16 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="library_8h__dep__incl.png" border="0" usemap="#ainclude_2library_8hdep" alt=""/></div>
 <map name="ainclude_2library_8hdep" id="ainclude_2library_8hdep">
-<area shape="rect" title="MAin header file." alt="" coords="386,5,511,32"/>
+<area shape="rect" title="Main header file." alt="" coords="325,5,450,32"/>
 <area shape="rect" href="compare_8cpp.html" title="compare file" alt="" coords="5,80,159,107"/>
-<area shape="rect" href="main_8cpp.html" title="compare file" alt="" coords="376,155,505,181"/>
-<area shape="rect" href="output_8cpp.html" title="compare file" alt="" coords="326,80,465,107"/>
-<area shape="rect" href="input_8h_source.html" title=" " alt="" coords="183,80,301,107"/>
-<area shape="rect" href="solver_8h_source.html" title=" " alt="" coords="540,80,664,107"/>
-<area shape="rect" href="Tests_8h_source.html" title=" " alt="" coords="699,80,817,107"/>
-<area shape="rect" href="input_8cpp.html" title="compare file" alt="" coords="177,155,307,181"/>
-<area shape="rect" href="solver_8cpp.html" title="compare file" alt="" coords="529,155,664,181"/>
-<area shape="rect" href="UnitTest_8cpp.html" title="compare file" alt="" coords="689,155,838,181"/>
+<area shape="rect" href="main_8cpp.html" title="compare file" alt="" coords="303,155,432,181"/>
+<area shape="rect" href="output_8cpp.html" title="output function" alt="" coords="669,80,807,107"/>
+<area shape="rect" href="input_8h.html" title="inpur header" alt="" coords="183,80,301,107"/>
+<area shape="rect" href="solver_8h.html" title="solver header" alt="" coords="520,80,644,107"/>
+<area shape="rect" href="Tests_8h.html" title="test values" alt="" coords="377,80,496,107"/>
+<area shape="rect" href="input_8cpp.html" title="compare file" alt="" coords="149,155,279,181"/>
+<area shape="rect" href="solver_8cpp.html" title="compare file" alt="" coords="631,155,765,181"/>
+<area shape="rect" href="UnitTest_8cpp.html" title="Test of solving quadratic equation." alt="" coords="457,155,606,181"/>
 </map>
 </div>
 </div>
@@ -123,14 +125,17 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">structure with fields describing quadratic equation  <a href="structTest.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCoeff.html">Coeff</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">structure for coefficients of quadratic equation  <a href="structCoeff.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structAnswer.html">Answer</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">structure for results of solving quadratic equation  <a href="structAnswer.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:af2fb64613c2a81c5d35771a379f22127"><td class="memItemLeft" align="right" valign="top"><a id="af2fb64613c2a81c5d35771a379f22127"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>DELETE_COLOR</b>&#160;&#160;&#160;&quot;\u001b[0m&quot;</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="library_8h.html#af2fb64613c2a81c5d35771a379f22127">DELETE_COLOR</a>&#160;&#160;&#160;&quot;\u001b[0m&quot;</td></tr>
+<tr class="memdesc:af2fb64613c2a81c5d35771a379f22127"><td class="mdescLeft">&#160;</td><td class="mdescRight">string constants for colors <br /></td></tr>
 <tr class="separator:af2fb64613c2a81c5d35771a379f22127"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acfbc006ea433ad708fdee3e82996e721"><td class="memItemLeft" align="right" valign="top"><a id="acfbc006ea433ad708fdee3e82996e721"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>GREEN</b>&#160;&#160;&#160;&quot;\u001b[32;1m&quot;</td></tr>
@@ -176,7 +181,7 @@ Variables</h2></td></tr>
 <tr class="separator:a796b99f056d3478f827cd1d2a2c166ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>MAin header file. </p>
+<div class="textblock"><p>Main header file. </p>
 <p>It contains description of most classes used in this programm </p>
 </div><h2 class="groupheader">Variable Documentation</h2>
 <a id="a796b99f056d3478f827cd1d2a2c166ba"></a>
@@ -192,7 +197,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Constant of accuracy of comparing. </p>
-<p>Comparing two close double values.</p>
+<p>Comparing two close double values: a and b.</p>
 <p>Used in <a class="el" href="compare_8cpp.html" title="compare file">compare.cpp</a> </p>
 
 </div>

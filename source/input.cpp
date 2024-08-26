@@ -1,14 +1,13 @@
 /*!
 \file
     \brief compare file
-
-
 */
 
 #include "input.h"
-//#include "library.h"
 
-
+/// \brief  input of coefficints to a non-constant structure
+/// \param  coef_ptr -- pointer to a variable of structure type with coefficients
+/// \return returns --  enum value showing errors
 prog_errors coef_input(struct Coeff* coef_ptr)                                           //ввод с клавы
 {
     assert(coef_ptr);

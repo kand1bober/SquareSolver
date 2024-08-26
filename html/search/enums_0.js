@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['number_5froots_44',['number_roots',['../library_8h.html#a1edd804c8a94bfd927e93caf172277a3',1,'library.h']]]
+  ['number_5froots_71',['number_roots',['../library_8h.html#a1edd804c8a94bfd927e93caf172277a3',1,'library.h']]]
 ];

@@ -1,28 +1,31 @@
 /*!
 \file
-    \brief compare file
+    \brief Test of solving quadratic equation
 
 
 */
 
-/// \brief Test of soling equations
 #include "UnitTest.h"
-//#include "library.h"
 #include "compare.h"
 #include "solver.h"
 #include "Tests.h"
 
-
+/// \brief rules the unit test iterations
+/// \param test_arr constant array of structures with true parameters of equation
+/// \param size number of structures in array
 void driver(const struct Test test_arr[], int size)
 {
     for(int y = 0; y <= size-1; y++)
+    {
         unit_test(test_arr[y], y);
+        assert(y < size);
+    }
 }
 
-/// @brief In this function I spleat Test structure into two:
+/// \brief In this function I spleat Test structure into two:
 ///        Coeffs and Answer, and create constant of type Coeffs and variable of type Answer to call function solver
-/// @param unit -- variable of type Test
-/// @param y -- itertion of the unit test
+/// \param unit -- variable of type Test
+/// \param y -- itertion of the unit test
 void unit_test(struct Test unit, int y)                         //тест с вводом из массива
 {
     int num_test = y + 1;

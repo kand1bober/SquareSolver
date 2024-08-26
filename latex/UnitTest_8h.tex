@@ -1,0 +1,74 @@
+\hypertarget{UnitTest_8h}{}\doxysection{include/\+Unit\+Test.h File Reference}
+\label{UnitTest_8h}\index{include/UnitTest.h@{include/UnitTest.h}}
+
+
+Unit test header file.  
+
+
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=308pt]{UnitTest_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{UnitTest_8h_a7b5e9a1eea457d13f71083a5200e80e7}{driver}} (const struct \mbox{\hyperlink{structTest}{Test}} \mbox{\hyperlink{Tests_8h_a99fea36277ba5afb32feadf50a5a4706}{test\+\_\+arr}}\mbox{[}$\,$\mbox{]}, int size)
+\begin{DoxyCompactList}\small\item\em rules the unit test iterations \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{UnitTest_8h_af6928f7571b5d7e4240a54b084f0585d}{unit\+\_\+test}} (struct \mbox{\hyperlink{structTest}{Test}} unit, int y)
+\begin{DoxyCompactList}\small\item\em In this function I spleat \mbox{\hyperlink{structTest}{Test}} structure into two\+: Coeffs and \mbox{\hyperlink{structAnswer}{Answer}}, and create constant of type Coeffs and variable of type \mbox{\hyperlink{structAnswer}{Answer}} to call function solver. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Unit test header file. 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{UnitTest_8h_a7b5e9a1eea457d13f71083a5200e80e7}\label{UnitTest_8h_a7b5e9a1eea457d13f71083a5200e80e7}} 
+\index{UnitTest.h@{UnitTest.h}!driver@{driver}}
+\index{driver@{driver}!UnitTest.h@{UnitTest.h}}
+\doxysubsubsection{\texorpdfstring{driver()}{driver()}}
+{\footnotesize\ttfamily void driver (\begin{DoxyParamCaption}\item[{const struct \mbox{\hyperlink{structTest}{Test}}}]{test\+\_\+arr\mbox{[}$\,$\mbox{]},  }\item[{int}]{size }\end{DoxyParamCaption})}
+
+
+
+rules the unit test iterations 
+
+
+\begin{DoxyParams}{Parameters}
+{\em test\+\_\+arr} & constant array of structures with true parameters of equation \\
+\hline
+{\em size} & number of structures in array \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{UnitTest_8h_af6928f7571b5d7e4240a54b084f0585d}\label{UnitTest_8h_af6928f7571b5d7e4240a54b084f0585d}} 
+\index{UnitTest.h@{UnitTest.h}!unit\_test@{unit\_test}}
+\index{unit\_test@{unit\_test}!UnitTest.h@{UnitTest.h}}
+\doxysubsubsection{\texorpdfstring{unit\_test()}{unit\_test()}}
+{\footnotesize\ttfamily void unit\+\_\+test (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structTest}{Test}}}]{unit,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+In this function I spleat \mbox{\hyperlink{structTest}{Test}} structure into two\+: Coeffs and \mbox{\hyperlink{structAnswer}{Answer}}, and create constant of type Coeffs and variable of type \mbox{\hyperlink{structAnswer}{Answer}} to call function solver. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em unit} & \\
+\hline
+{\em y} & \\
+\hline
+{\em unit} & -- variable of type \mbox{\hyperlink{structTest}{Test}} \\
+\hline
+{\em y} & -- itertion of the unit test \\
+\hline
+\end{DoxyParams}
+a in structure
+
+b in structure
+
+c in structure
+
+Solver can only take variable of type Coeffs and Answers

@@ -1,6 +1,6 @@
 /*!
 \file
-    \brief compare file
+    \brief output function
 
 
 */
@@ -8,7 +8,8 @@
 #include "output.h"
 #include "library.h"
 
-
+/// \brief function prints number of roots and roots themselves
+/// \param print pointer to structure with abswers of quadratic equation
 void print_answer(struct Answer* print)
 {
     assert(print);

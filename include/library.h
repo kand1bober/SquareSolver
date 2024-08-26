@@ -1,6 +1,6 @@
 /*!
 \file
-    \brief MAin header file
+    \brief Main header file
 
     It contains description of most classes used in this programm
 */
@@ -8,13 +8,17 @@
 #ifndef LIBRARY_HEADER
 #define LIBRARY_HEADER
 
+//#define NDEBUG
+
 #include <iostream>
 #include <stdio.h>
 #include <math.h>
 #include <stdbool.h>
 #include <assert.h>
 #include <string.h>
+#include <stdarg.h>
 
+///string constants for colors
 #define DELETE_COLOR "\u001b[0m"
 #define GREEN "\u001b[32;1m"
 #define RED "\u001b[31;1m"
@@ -23,6 +27,13 @@
 #define WHITE "\u001b[37;1m"
 #define BLUE "\u001b[36;1m"
 #define SINIY "\u001b[34;1m"
+//
+// #define PRINT(color, string)     \
+// ({                                \
+//     printf(color "string");         \
+// })                            \               // macro of color printing
+//
+//
 
 /// \brief Constant of accuracy of comparing
 /// \details Used in compare.cpp
@@ -63,6 +74,7 @@ struct Test
     int nroot_exp;
 };
 
+/// \brief structure for coefficients of quadratic equation
 struct Coeff            //переменная coef
 {
     double a;
@@ -70,19 +82,12 @@ struct Coeff            //переменная coef
     double c;
 };
 
+/// \brief structure for results of solving quadratic equation
 struct Answer          //переменная root
 {
-    number_roots nroot;
-    double x1;
-    double x2;
+    number_roots nroot;  /// number of roots
+    double x1;           /// first root
+    double x2;           /// second root
 };
 
-// const struct Test test_arr[] =
-// {
-//     {1, 4, 3.98, -1.858579, -2.141421, 1},
-//     {1, 5,    6,        -2,        -3, 2},
-//     {-100, 0, 25, -0.5, 0.5, 2},
-//
-//     {1,    7,  6,    -1, -6, 2}
-// };
 #endif /* LIBRARY_HEADER */

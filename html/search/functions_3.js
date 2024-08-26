@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['unit_5ftest_36',['unit_test',['../UnitTest_8cpp.html#af6928f7571b5d7e4240a54b084f0585d',1,'UnitTest.cpp']]]
+  ['print_5fanswer_57',['print_answer',['../output_8cpp.html#ae3edfe370eb8022d7b2f87bbcf1ad5d5',1,'print_answer(struct Answer *print):&#160;output.cpp'],['../output_8h.html#ae3edfe370eb8022d7b2f87bbcf1ad5d5',1,'print_answer(struct Answer *print):&#160;output.cpp']]]
 ];

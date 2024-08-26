@@ -74,38 +74,116 @@ $(function() {
 
 <p>compare file  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;solver.h&quot;</code><br />
-<code>#include &quot;compare.h&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="solver_8h_source.html">solver.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="compare_8h_source.html">compare.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for solver.cpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="solver_8cpp__incl.png" border="0" usemap="#asource_2solver_8cpp" alt=""/></div>
 <map name="asource_2solver_8cpp" id="asource_2solver_8cpp">
-<area shape="rect" title="compare file" alt="" coords="270,5,405,32"/>
-<area shape="rect" href="solver_8h_source.html" title=" " alt="" coords="247,80,321,107"/>
-<area shape="rect" href="compare_8h_source.html" title=" " alt="" coords="345,80,436,107"/>
-<area shape="rect" href="library_8h.html" title="MAin header file." alt="" coords="247,155,321,181"/>
+<area shape="rect" title="compare file" alt="" coords="321,5,455,32"/>
+<area shape="rect" href="solver_8h.html" title="solver header" alt="" coords="298,80,371,107"/>
+<area shape="rect" href="compare_8h.html" title="compare header" alt="" coords="396,80,487,107"/>
+<area shape="rect" href="library_8h.html" title="Main header file." alt="" coords="297,155,372,181"/>
 <area shape="rect" title=" " alt="" coords="5,229,85,256"/>
 <area shape="rect" title=" " alt="" coords="109,229,176,256"/>
 <area shape="rect" title=" " alt="" coords="201,229,269,256"/>
 <area shape="rect" title=" " alt="" coords="293,229,376,256"/>
 <area shape="rect" title=" " alt="" coords="400,229,475,256"/>
 <area shape="rect" title=" " alt="" coords="499,229,570,256"/>
+<area shape="rect" title=" " alt="" coords="595,229,669,256"/>
 </map>
 </div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a79db9f56c0947c313cd77bd9f7b7bace"><td class="memItemLeft" align="right" valign="top"><a id="a79db9f56c0947c313cd77bd9f7b7bace"></a>
-<a class="el" href="library_8h.html#a1edd804c8a94bfd927e93caf172277a3">number_roots</a>&#160;</td><td class="memItemRight" valign="bottom"><b>solver</b> (struct <a class="el" href="structCoeff.html">Coeff</a> coef, struct <a class="el" href="structAnswer.html">Answer</a> *root_ptr)</td></tr>
+<tr class="memitem:a79db9f56c0947c313cd77bd9f7b7bace"><td class="memItemLeft" align="right" valign="top"><a class="el" href="library_8h.html#a1edd804c8a94bfd927e93caf172277a3">number_roots</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="solver_8cpp.html#a79db9f56c0947c313cd77bd9f7b7bace">solver</a> (struct <a class="el" href="structCoeff.html">Coeff</a> coef, struct <a class="el" href="structAnswer.html">Answer</a> *root_ptr)</td></tr>
+<tr class="memdesc:a79db9f56c0947c313cd77bd9f7b7bace"><td class="mdescLeft">&#160;</td><td class="mdescRight">function finds out number of roots and calls square_solver or solve linear equation based on value of coefficients  <a href="solver_8cpp.html#a79db9f56c0947c313cd77bd9f7b7bace">More...</a><br /></td></tr>
 <tr class="separator:a79db9f56c0947c313cd77bd9f7b7bace"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac74e8122114286a7eb438c36999e73c2"><td class="memItemLeft" align="right" valign="top"><a id="ac74e8122114286a7eb438c36999e73c2"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>square_solver</b> (struct <a class="el" href="structCoeff.html">Coeff</a> coef, struct <a class="el" href="structAnswer.html">Answer</a> *root_ptr)</td></tr>
+<tr class="memitem:ac74e8122114286a7eb438c36999e73c2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="solver_8cpp.html#ac74e8122114286a7eb438c36999e73c2">square_solver</a> (struct <a class="el" href="structCoeff.html">Coeff</a> coef, struct <a class="el" href="structAnswer.html">Answer</a> *root_ptr)</td></tr>
+<tr class="memdesc:ac74e8122114286a7eb438c36999e73c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">function calculates roots based on the coefficients  <a href="solver_8cpp.html#ac74e8122114286a7eb438c36999e73c2">More...</a><br /></td></tr>
 <tr class="separator:ac74e8122114286a7eb438c36999e73c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>compare file </p>
-</div></div><!-- contents -->
+</div><h2 class="groupheader">Function Documentation</h2>
+<a id="a79db9f56c0947c313cd77bd9f7b7bace"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79db9f56c0947c313cd77bd9f7b7bace">&#9670;&nbsp;</a></span>solver()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="library_8h.html#a1edd804c8a94bfd927e93caf172277a3">number_roots</a> solver </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structCoeff.html">Coeff</a>&#160;</td>
+          <td class="paramname"><em>coef</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structAnswer.html">Answer</a> *&#160;</td>
+          <td class="paramname"><em>root_ptr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>function finds out number of roots and calls square_solver or solve linear equation based on value of coefficients </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">coef</td><td>strcture with coeffs of equation </td></tr>
+    <tr><td class="paramname">root_ptr</td><td>pointer to a field of structure with value of amount of roots </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>returning amount of roots in enum value </dd></dl>
+
+</div>
+</div>
+<a id="ac74e8122114286a7eb438c36999e73c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac74e8122114286a7eb438c36999e73c2">&#9670;&nbsp;</a></span>square_solver()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int square_solver </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structCoeff.html">Coeff</a>&#160;</td>
+          <td class="paramname"><em>coef</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structAnswer.html">Answer</a> *&#160;</td>
+          <td class="paramname"><em>root_ptr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>function calculates roots based on the coefficients </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">coef</td><td>structure with coefficients </td></tr>
+    <tr><td class="paramname">root_ptr</td><td>pointer to a field of structure with value of amount of roots </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>returs amount of roots based on value of discriminant </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1

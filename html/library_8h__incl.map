@@ -1,9 +1,10 @@
 <map id="include/library.h" name="include/library.h">
-<area shape="rect" id="node1" title="MAin header file." alt="" coords="221,5,347,32"/>
+<area shape="rect" id="node1" title="Main header file." alt="" coords="272,5,397,32"/>
 <area shape="rect" id="node2" title=" " alt="" coords="5,80,85,107"/>
 <area shape="rect" id="node3" title=" " alt="" coords="109,80,176,107"/>
 <area shape="rect" id="node4" title=" " alt="" coords="201,80,269,107"/>
 <area shape="rect" id="node5" title=" " alt="" coords="293,80,376,107"/>
 <area shape="rect" id="node6" title=" " alt="" coords="400,80,475,107"/>
 <area shape="rect" id="node7" title=" " alt="" coords="499,80,570,107"/>
+<area shape="rect" id="node8" title=" " alt="" coords="595,80,669,107"/>
 </map>

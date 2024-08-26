@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['coeff_24',['Coeff',['../structCoeff.html',1,'']]]
+  ['coeff_38',['Coeff',['../structCoeff.html',1,'']]]
 ];

@@ -10,6 +10,7 @@
 #include "input.h"
 #include "output.h"
 #include "UnitTest.h"
+#include "Tests.h"
 
 
 

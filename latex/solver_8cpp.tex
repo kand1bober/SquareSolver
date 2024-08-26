@@ -7,7 +7,8 @@ compare file
 
 {\ttfamily \#include \char`\"{}solver.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}compare.\+h\char`\"{}}\newline
-Include dependency graph for solver.\+cpp\+:\nopagebreak
+Include dependency graph for solver.\+cpp\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -17,14 +18,55 @@ Include dependency graph for solver.\+cpp\+:\nopagebreak
 \doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{solver_8cpp_a79db9f56c0947c313cd77bd9f7b7bace}\label{solver_8cpp_a79db9f56c0947c313cd77bd9f7b7bace}} 
-\mbox{\hyperlink{library_8h_a1edd804c8a94bfd927e93caf172277a3}{number\+\_\+roots}} {\bfseries solver} (struct \mbox{\hyperlink{structCoeff}{Coeff}} coef, struct \mbox{\hyperlink{structAnswer}{Answer}} $\ast$root\+\_\+ptr)
-\item 
-\mbox{\Hypertarget{solver_8cpp_ac74e8122114286a7eb438c36999e73c2}\label{solver_8cpp_ac74e8122114286a7eb438c36999e73c2}} 
-int {\bfseries square\+\_\+solver} (struct \mbox{\hyperlink{structCoeff}{Coeff}} coef, struct \mbox{\hyperlink{structAnswer}{Answer}} $\ast$root\+\_\+ptr)
-\end{DoxyCompactItemize}
+\mbox{\hyperlink{library_8h_a1edd804c8a94bfd927e93caf172277a3}{number\+\_\+roots}} \mbox{\hyperlink{solver_8cpp_a79db9f56c0947c313cd77bd9f7b7bace}{solver}} (struct \mbox{\hyperlink{structCoeff}{Coeff}} coef, struct \mbox{\hyperlink{structAnswer}{Answer}} $\ast$root\+\_\+ptr)
+\begin{DoxyCompactList}\small\item\em function finds out number of roots and calls square\+\_\+solver or solve linear equation based on value of coefficients \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{solver_8cpp_ac74e8122114286a7eb438c36999e73c2}{square\+\_\+solver}} (struct \mbox{\hyperlink{structCoeff}{Coeff}} coef, struct \mbox{\hyperlink{structAnswer}{Answer}} $\ast$root\+\_\+ptr)
+\begin{DoxyCompactList}\small\item\em function calculates roots based on the coefficients \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
 compare file 
 
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{solver_8cpp_a79db9f56c0947c313cd77bd9f7b7bace}\label{solver_8cpp_a79db9f56c0947c313cd77bd9f7b7bace}} 
+\index{solver.cpp@{solver.cpp}!solver@{solver}}
+\index{solver@{solver}!solver.cpp@{solver.cpp}}
+\doxysubsubsection{\texorpdfstring{solver()}{solver()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{library_8h_a1edd804c8a94bfd927e93caf172277a3}{number\+\_\+roots}} solver (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structCoeff}{Coeff}}}]{coef,  }\item[{struct \mbox{\hyperlink{structAnswer}{Answer}} $\ast$}]{root\+\_\+ptr }\end{DoxyParamCaption})}
+
+
+
+function finds out number of roots and calls square\+\_\+solver or solve linear equation based on value of coefficients 
+
+
+\begin{DoxyParams}{Parameters}
+{\em coef} & strcture with coeffs of equation \\
+\hline
+{\em root\+\_\+ptr} & pointer to a field of structure with value of amount of roots \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+returning amount of roots in enum value 
+\end{DoxyReturn}
+\mbox{\Hypertarget{solver_8cpp_ac74e8122114286a7eb438c36999e73c2}\label{solver_8cpp_ac74e8122114286a7eb438c36999e73c2}} 
+\index{solver.cpp@{solver.cpp}!square\_solver@{square\_solver}}
+\index{square\_solver@{square\_solver}!solver.cpp@{solver.cpp}}
+\doxysubsubsection{\texorpdfstring{square\_solver()}{square\_solver()}}
+{\footnotesize\ttfamily int square\+\_\+solver (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structCoeff}{Coeff}}}]{coef,  }\item[{struct \mbox{\hyperlink{structAnswer}{Answer}} $\ast$}]{root\+\_\+ptr }\end{DoxyParamCaption})}
+
+
+
+function calculates roots based on the coefficients 
+
+
+\begin{DoxyParams}{Parameters}
+{\em coef} & structure with coefficients \\
+\hline
+{\em root\+\_\+ptr} & pointer to a field of structure with value of amount of roots \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+returs amount of roots based on value of discriminant 
+\end{DoxyReturn}

@@ -2,7 +2,7 @@
 \label{library_8h}\index{include/library.h@{include/library.h}}
 
 
-MAin header file.  
+Main header file.  
 
 
 {\ttfamily \#include $<$iostream$>$}\newline
@@ -11,6 +11,7 @@ MAin header file.
 {\ttfamily \#include $<$stdbool.\+h$>$}\newline
 {\ttfamily \#include $<$assert.\+h$>$}\newline
 {\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$stdarg.\+h$>$}\newline
 Include dependency graph for library.\+h\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
@@ -32,15 +33,15 @@ This graph shows which files directly or indirectly include this file\+:
 struct \mbox{\hyperlink{structTest}{Test}}
 \begin{DoxyCompactList}\small\item\em structure with fields describing quadratic equation \end{DoxyCompactList}\item 
 struct \mbox{\hyperlink{structCoeff}{Coeff}}
-\item 
+\begin{DoxyCompactList}\small\item\em structure for coefficients of quadratic equation \end{DoxyCompactList}\item 
 struct \mbox{\hyperlink{structAnswer}{Answer}}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em structure for results of solving quadratic equation \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Macros}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{library_8h_af2fb64613c2a81c5d35771a379f22127}\label{library_8h_af2fb64613c2a81c5d35771a379f22127}} 
-\#define {\bfseries DELETE\+\_\+\+COLOR}~\char`\"{}\textbackslash{}u001b\mbox{[}0m\char`\"{}
-\item 
+\#define \mbox{\hyperlink{library_8h_af2fb64613c2a81c5d35771a379f22127}{DELETE\+\_\+\+COLOR}}~\char`\"{}\textbackslash{}u001b\mbox{[}0m\char`\"{}
+\begin{DoxyCompactList}\small\item\em string constants for colors \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{library_8h_acfbc006ea433ad708fdee3e82996e721}\label{library_8h_acfbc006ea433ad708fdee3e82996e721}} 
 \#define {\bfseries GREEN}~\char`\"{}\textbackslash{}u001b\mbox{[}32;1m\char`\"{}
 \item 
@@ -85,7 +86,7 @@ const double \mbox{\hyperlink{library_8h_a796b99f056d3478f827cd1d2a2c166ba}{ACCU
 
 
 \doxysubsection{Detailed Description}
-MAin header file. 
+Main header file. 
 
 It contains description of most classes used in this programm 
 
@@ -100,6 +101,6 @@ It contains description of most classes used in this programm
 
 Constant of accuracy of comparing. 
 
-Comparing two close double values.
+Comparing two close double values\+: a and b.
 
 Used in \mbox{\hyperlink{compare_8cpp}{compare.\+cpp}} 

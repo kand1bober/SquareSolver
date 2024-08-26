@@ -69,19 +69,23 @@ $(function() {
 <div class="title">solver.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef SOLVER_HEADER</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define SOLVER_HEADER</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="library_8h.html">library.h</a>&quot;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<a class="code" href="library_8h.html#a1edd804c8a94bfd927e93caf172277a3">number_roots</a> solver(<span class="keyword">struct</span> <a class="code" href="structCoeff.html">Coeff</a> coef, <span class="keyword">struct</span> <a class="code" href="structAnswer.html">Answer</a>* root_ptr);</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keywordtype">int</span> square_solver(<span class="keyword">struct</span> <a class="code" href="structCoeff.html">Coeff</a> coef, <span class="keyword">struct</span> <a class="code" href="structAnswer.html">Answer</a>* root_ptr);</div>
+<a href="solver_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#ifndef SOLVER_HEADER</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#define SOLVER_HEADER</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="alibrary_8h_html"><div class="ttname"><a href="library_8h.html">library.h</a></div><div class="ttdoc">MAin header file.</div></div>
-<div class="ttc" id="alibrary_8h_html_a1edd804c8a94bfd927e93caf172277a3"><div class="ttname"><a href="library_8h.html#a1edd804c8a94bfd927e93caf172277a3">number_roots</a></div><div class="ttdeci">number_roots</div><div class="ttdoc">enumeration of roots of quadratic equation</div><div class="ttdef"><b>Definition:</b> library.h:41</div></div>
-<div class="ttc" id="astructAnswer_html"><div class="ttname"><a href="structAnswer.html">Answer</a></div><div class="ttdef"><b>Definition:</b> library.h:74</div></div>
-<div class="ttc" id="astructCoeff_html"><div class="ttname"><a href="structCoeff.html">Coeff</a></div><div class="ttdef"><b>Definition:</b> library.h:67</div></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="library_8h.html">library.h</a>&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<a class="code" href="library_8h.html#a1edd804c8a94bfd927e93caf172277a3">number_roots</a> <a class="code" href="solver_8h.html#a79db9f56c0947c313cd77bd9f7b7bace">solver</a>(<span class="keyword">struct</span> <a class="code" href="structCoeff.html">Coeff</a> coef, <span class="keyword">struct</span> <a class="code" href="structAnswer.html">Answer</a>* root_ptr);</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keywordtype">int</span> <a class="code" href="solver_8h.html#ac74e8122114286a7eb438c36999e73c2">square_solver</a>(<span class="keyword">struct</span> <a class="code" href="structCoeff.html">Coeff</a> coef, <span class="keyword">struct</span> <a class="code" href="structAnswer.html">Answer</a>* root_ptr);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="alibrary_8h_html"><div class="ttname"><a href="library_8h.html">library.h</a></div><div class="ttdoc">Main header file.</div></div>
+<div class="ttc" id="alibrary_8h_html_a1edd804c8a94bfd927e93caf172277a3"><div class="ttname"><a href="library_8h.html#a1edd804c8a94bfd927e93caf172277a3">number_roots</a></div><div class="ttdeci">number_roots</div><div class="ttdoc">enumeration of roots of quadratic equation</div><div class="ttdef"><b>Definition:</b> library.h:52</div></div>
+<div class="ttc" id="asolver_8h_html_a79db9f56c0947c313cd77bd9f7b7bace"><div class="ttname"><a href="solver_8h.html#a79db9f56c0947c313cd77bd9f7b7bace">solver</a></div><div class="ttdeci">number_roots solver(struct Coeff coef, struct Answer *root_ptr)</div><div class="ttdoc">function finds out number of roots and calls square_solver or solve linear equation based on value of...</div><div class="ttdef"><b>Definition:</b> solver.cpp:13</div></div>
+<div class="ttc" id="asolver_8h_html_ac74e8122114286a7eb438c36999e73c2"><div class="ttname"><a href="solver_8h.html#ac74e8122114286a7eb438c36999e73c2">square_solver</a></div><div class="ttdeci">int square_solver(struct Coeff coef, struct Answer *root_ptr)</div><div class="ttdoc">function calculates roots based on the coefficients</div><div class="ttdef"><b>Definition:</b> solver.cpp:56</div></div>
+<div class="ttc" id="astructAnswer_html"><div class="ttname"><a href="structAnswer.html">Answer</a></div><div class="ttdoc">structure for results of solving quadratic equation</div><div class="ttdef"><b>Definition:</b> library.h:87</div></div>
+<div class="ttc" id="astructCoeff_html"><div class="ttname"><a href="structCoeff.html">Coeff</a></div><div class="ttdoc">structure for coefficients of quadratic equation</div><div class="ttdef"><b>Definition:</b> library.h:79</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
