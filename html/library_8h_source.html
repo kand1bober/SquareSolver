@@ -70,62 +70,69 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <a href="library_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#ifndef LIBRARY_HEADER</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#define LIBRARY_HEADER</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;math.h&gt;</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;stdbool.h&gt;</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;assert.h&gt;</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;string.h&gt;</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">enum</span> prog_errors  <span class="comment">// fix P</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;{</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    NO_ERRORS = 0,</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    ERROR_WRONG_COEFFS = 1,</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;};</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">enum</span> number_roots <span class="comment">// fix N</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    INF_ROOTS = -1,</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    NO_ROOTS,</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    ONE_ROOT,</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    TWO_ROOTS,</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;};</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="structTest.html">   34</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structTest.html">Test</a>               <span class="comment">// массив с элеманетамми типа структуры</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;{</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">double</span> a_test;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">double</span> b_test;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">double</span> c_test; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="structTest.html#a5fe642e7f97511726114bf5a17c4e363">   40</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="structTest.html#a5fe642e7f97511726114bf5a17c4e363">x1_exp</a>;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">double</span> x2_exp;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">int</span> nroot_exp;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    number_roots nroot;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;};</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="structCoeff.html">   47</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structCoeff.html">Coeff</a>            <span class="comment">//переменная coef</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;{</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">double</span> a;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">double</span> b;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">double</span> c;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;};</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="structAnswer.html">   54</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structAnswer.html">Answer</a>          <span class="comment">//переменная root</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;{</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    number_roots nroot;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">double</span> x1;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">double</span> x2;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;};</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* LIBRARY_HEADER */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="astructAnswer_html"><div class="ttname"><a href="structAnswer.html">Answer</a></div><div class="ttdef"><b>Definition:</b> library.h:55</div></div>
-<div class="ttc" id="astructCoeff_html"><div class="ttname"><a href="structCoeff.html">Coeff</a></div><div class="ttdef"><b>Definition:</b> library.h:48</div></div>
-<div class="ttc" id="astructTest_html"><div class="ttname"><a href="structTest.html">Test</a></div><div class="ttdoc">vggvgvgv</div><div class="ttdef"><b>Definition:</b> library.h:35</div></div>
-<div class="ttc" id="astructTest_html_a5fe642e7f97511726114bf5a17c4e363"><div class="ttname"><a href="structTest.html#a5fe642e7f97511726114bf5a17c4e363">Test::x1_exp</a></div><div class="ttdeci">double x1_exp</div><div class="ttdoc">hgfvhffcfhgc</div><div class="ttdef"><b>Definition:</b> library.h:40</div></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef LIBRARY_HEADER</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define LIBRARY_HEADER</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;math.h&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;stdbool.h&gt;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;assert.h&gt;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;string.h&gt;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="library_8h.html#a796b99f056d3478f827cd1d2a2c166ba">   20</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">double</span> <a class="code" href="library_8h.html#a796b99f056d3478f827cd1d2a2c166ba">ACCURACY</a> = 1e-5;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="library_8h.html#ac9051579cb1540b49d48ca33cdd7f9f3">   23</a></span>&#160;<span class="keyword">enum</span> <a class="code" href="library_8h.html#ac9051579cb1540b49d48ca33cdd7f9f3">prog_errors</a>  <span class="comment">// fix P</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;{</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    NO_ERRORS = 0,</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    ERROR_WRONG_COEFFS = 1,</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;};</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="library_8h.html#a1edd804c8a94bfd927e93caf172277a3">   30</a></span>&#160;<span class="keyword">enum</span> <a class="code" href="library_8h.html#a1edd804c8a94bfd927e93caf172277a3">number_roots</a> <span class="comment">// fix N</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;{</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    INF_ROOTS = -1,</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    NO_ROOTS,</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    ONE_ROOT,</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    TWO_ROOTS,</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;};</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="structTest.html">   40</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structTest.html">Test</a></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;{</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="structTest.html#a3f69277daaea22f9e8c099f18bd23b76">   43</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="structTest.html#a3f69277daaea22f9e8c099f18bd23b76">a_test</a>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="structTest.html#a3cfd6b7df30654fa609e81a60db67fa4">   45</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="structTest.html#a3cfd6b7df30654fa609e81a60db67fa4">b_test</a>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="structTest.html#aad12af22fd72c7de0dc590eb94fd102f">   47</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="structTest.html#aad12af22fd72c7de0dc590eb94fd102f">c_test</a>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="structTest.html#a5fe642e7f97511726114bf5a17c4e363">   49</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="structTest.html#a5fe642e7f97511726114bf5a17c4e363">x1_exp</a>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="structTest.html#a7b3daaa768037931b454c2bdf3336de6">   51</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="structTest.html#a7b3daaa768037931b454c2bdf3336de6">x2_exp</a>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="structTest.html#a6cb6f03121c090b8cbf87105b6191c44">   53</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structTest.html#a6cb6f03121c090b8cbf87105b6191c44">nroot_exp</a>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;};</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="structCoeff.html">   56</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structCoeff.html">Coeff</a>            <span class="comment">//переменная coef</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;{</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">double</span> a;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">double</span> b;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">double</span> c;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;};</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="structAnswer.html">   63</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structAnswer.html">Answer</a>          <span class="comment">//переменная root</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;{</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <a class="code" href="library_8h.html#a1edd804c8a94bfd927e93caf172277a3">number_roots</a> nroot;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordtype">double</span> x1;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">double</span> x2;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;};</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* LIBRARY_HEADER */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="alibrary_8h_html_a1edd804c8a94bfd927e93caf172277a3"><div class="ttname"><a href="library_8h.html#a1edd804c8a94bfd927e93caf172277a3">number_roots</a></div><div class="ttdeci">number_roots</div><div class="ttdoc">enumeration of roots of quadratic equation</div><div class="ttdef"><b>Definition:</b> library.h:31</div></div>
+<div class="ttc" id="alibrary_8h_html_a796b99f056d3478f827cd1d2a2c166ba"><div class="ttname"><a href="library_8h.html#a796b99f056d3478f827cd1d2a2c166ba">ACCURACY</a></div><div class="ttdeci">const double ACCURACY</div><div class="ttdoc">Constant of accuracy of comparing.</div><div class="ttdef"><b>Definition:</b> library.h:20</div></div>
+<div class="ttc" id="alibrary_8h_html_ac9051579cb1540b49d48ca33cdd7f9f3"><div class="ttname"><a href="library_8h.html#ac9051579cb1540b49d48ca33cdd7f9f3">prog_errors</a></div><div class="ttdeci">prog_errors</div><div class="ttdoc">enumeration of errors in fuctions</div><div class="ttdef"><b>Definition:</b> library.h:24</div></div>
+<div class="ttc" id="astructAnswer_html"><div class="ttname"><a href="structAnswer.html">Answer</a></div><div class="ttdef"><b>Definition:</b> library.h:64</div></div>
+<div class="ttc" id="astructCoeff_html"><div class="ttname"><a href="structCoeff.html">Coeff</a></div><div class="ttdef"><b>Definition:</b> library.h:57</div></div>
+<div class="ttc" id="astructTest_html"><div class="ttname"><a href="structTest.html">Test</a></div><div class="ttdoc">structure with fields describing quadratic equation</div><div class="ttdef"><b>Definition:</b> library.h:41</div></div>
+<div class="ttc" id="astructTest_html_a3cfd6b7df30654fa609e81a60db67fa4"><div class="ttname"><a href="structTest.html#a3cfd6b7df30654fa609e81a60db67fa4">Test::b_test</a></div><div class="ttdeci">double b_test</div><div class="ttdoc">coefficient b (not changing)</div><div class="ttdef"><b>Definition:</b> library.h:45</div></div>
+<div class="ttc" id="astructTest_html_a3f69277daaea22f9e8c099f18bd23b76"><div class="ttname"><a href="structTest.html#a3f69277daaea22f9e8c099f18bd23b76">Test::a_test</a></div><div class="ttdeci">double a_test</div><div class="ttdoc">coefficient a (not changing)</div><div class="ttdef"><b>Definition:</b> library.h:43</div></div>
+<div class="ttc" id="astructTest_html_a5fe642e7f97511726114bf5a17c4e363"><div class="ttname"><a href="structTest.html#a5fe642e7f97511726114bf5a17c4e363">Test::x1_exp</a></div><div class="ttdeci">double x1_exp</div><div class="ttdoc">expected first root (not changing)</div><div class="ttdef"><b>Definition:</b> library.h:49</div></div>
+<div class="ttc" id="astructTest_html_a6cb6f03121c090b8cbf87105b6191c44"><div class="ttname"><a href="structTest.html#a6cb6f03121c090b8cbf87105b6191c44">Test::nroot_exp</a></div><div class="ttdeci">int nroot_exp</div><div class="ttdoc">expected amount of roots (not changing)</div><div class="ttdef"><b>Definition:</b> library.h:53</div></div>
+<div class="ttc" id="astructTest_html_a7b3daaa768037931b454c2bdf3336de6"><div class="ttname"><a href="structTest.html#a7b3daaa768037931b454c2bdf3336de6">Test::x2_exp</a></div><div class="ttdeci">double x2_exp</div><div class="ttdoc">expected second root (not changing)</div><div class="ttdef"><b>Definition:</b> library.h:51</div></div>
+<div class="ttc" id="astructTest_html_aad12af22fd72c7de0dc590eb94fd102f"><div class="ttname"><a href="structTest.html#aad12af22fd72c7de0dc590eb94fd102f">Test::c_test</a></div><div class="ttdeci">double c_test</div><div class="ttdoc">coefficient c (not changing)</div><div class="ttdef"><b>Definition:</b> library.h:47</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

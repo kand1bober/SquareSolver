@@ -50,7 +50,7 @@ int main(int argc, char* argv[])
                 printf("Type\u001b[0m --test \u001b[33;1mto check test results\u001b[0m\n");
             }
         if(!strcmp(argv[1], "--test"))
-            driver(test_arr);
+            driver(test_arr, sizeof(test_arr) / sizeof(test_arr[0]));
 
         if(!strcmp(argv[1], "--normal"))
         {

@@ -1,9 +1,8 @@
 /*!
 \file
-\brief Заголовочный файл с описанием классов
+    \brief MAin header file
 
-Данный файл содержит в себе определения основных
-классов, используемых в демонстрационной программе
+    It contains description of most classes used in this programm
 */
 
 #ifndef LIBRARY_HEADER
@@ -16,16 +15,19 @@
 #include <assert.h>
 #include <string.h>
 
-/// @brief bhgvgvgfv
+/// \brief Constant of accuracy of comparing
+/// \details Used in compare.cpp
+
 const double ACCURACY = 1e-5;
 
+/// \brief enumeration of errors in fuctions
 enum prog_errors  // fix P
 {
     NO_ERRORS = 0,
     ERROR_WRONG_COEFFS = 1,
 };
 
-/// @brief dc
+/// \brief enumeration of roots of quadratic equation
 enum number_roots // fix N
 {
     INF_ROOTS = -1,
@@ -34,18 +36,22 @@ enum number_roots // fix N
     TWO_ROOTS,
 };
 
-///  vggvgvgv
-struct Test               // массив с элеманетамми типа структуры
+/// \brief structure with fields describing quadratic equation
+/// \details further will be used in array of structures to make input for unit test
+struct Test
 {
+    /// coefficient a (not changing)
     double a_test;
+    /// coefficient b (not changing)
     double b_test;
-    double c_test; /// hgfvhffcfhgc
-
+    /// coefficient c (not changing)
+    double c_test;
+    /// expected first root (not changing)
     double x1_exp;
+    /// expected second root (not changing)
     double x2_exp;
+    /// expected amount of roots (not changing)
     int nroot_exp;
-
-    number_roots nroot;
 };
 
 struct Coeff            //переменная coef

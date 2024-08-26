@@ -2,7 +2,7 @@
 \label{library_8h}\index{include/library.h@{include/library.h}}
 
 
-Заголовочный файл с описанием классов  
+MAin header file.  
 
 
 {\ttfamily \#include $<$iostream$>$}\newline
@@ -29,7 +29,7 @@ This graph shows which files directly or indirectly include this file\+:\nopageb
 \begin{DoxyCompactItemize}
 \item 
 struct \mbox{\hyperlink{structTest}{Test}}
-\begin{DoxyCompactList}\small\item\em vggvgvgv \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em structure with fields describing quadratic equation \end{DoxyCompactList}\item 
 struct \mbox{\hyperlink{structCoeff}{Coeff}}
 \item 
 struct \mbox{\hyperlink{structAnswer}{Answer}}
@@ -38,20 +38,38 @@ struct \mbox{\hyperlink{structAnswer}{Answer}}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{library_8h_ac9051579cb1540b49d48ca33cdd7f9f3}\label{library_8h_ac9051579cb1540b49d48ca33cdd7f9f3}} 
-enum {\bfseries prog\+\_\+errors} \{ {\bfseries NO\+\_\+\+ERRORS} = 0
+enum \mbox{\hyperlink{library_8h_ac9051579cb1540b49d48ca33cdd7f9f3}{prog\+\_\+errors}} \{ {\bfseries NO\+\_\+\+ERRORS} = 0
 , {\bfseries ERROR\+\_\+\+WRONG\+\_\+\+COEFFS} = 1
  \}
-\item 
+\begin{DoxyCompactList}\small\item\em enumeration of errors in fuctions \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{library_8h_a1edd804c8a94bfd927e93caf172277a3}\label{library_8h_a1edd804c8a94bfd927e93caf172277a3}} 
-enum {\bfseries number\+\_\+roots} \{ {\bfseries INF\+\_\+\+ROOTS} = -\/1
+enum \mbox{\hyperlink{library_8h_a1edd804c8a94bfd927e93caf172277a3}{number\+\_\+roots}} \{ {\bfseries INF\+\_\+\+ROOTS} = -\/1
 , {\bfseries NO\+\_\+\+ROOTS}
 , {\bfseries ONE\+\_\+\+ROOT}
 , {\bfseries TWO\+\_\+\+ROOTS}
  \}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em enumeration of roots of quadratic equation \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const double \mbox{\hyperlink{library_8h_a796b99f056d3478f827cd1d2a2c166ba}{ACCURACY}} = 1e-\/5
+\begin{DoxyCompactList}\small\item\em Constant of accuracy of comparing. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
-Заголовочный файл с описанием классов 
+MAin header file. 
 
-Данный файл содержит в себе определения основных классов, используемых в демонстрационной программе 
+It contains description of most classes used in this programm 
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{library_8h_a796b99f056d3478f827cd1d2a2c166ba}\label{library_8h_a796b99f056d3478f827cd1d2a2c166ba}} 
+\index{library.h@{library.h}!ACCURACY@{ACCURACY}}
+\index{ACCURACY@{ACCURACY}!library.h@{library.h}}
+\doxysubsubsection{\texorpdfstring{ACCURACY}{ACCURACY}}
+{\footnotesize\ttfamily const double ACCURACY = 1e-\/5}
+
+
+
+Constant of accuracy of comparing. 
+
+Used in compare.\+cpp 

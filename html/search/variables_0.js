@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['x1_5fexp_9',['x1_exp',['../structTest.html#a5fe642e7f97511726114bf5a17c4e363',1,'Test']]]
+  ['a_5ftest_17',['a_test',['../structTest.html#a3f69277daaea22f9e8c099f18bd23b76',1,'Test']]],
+  ['accuracy_18',['ACCURACY',['../library_8h.html#a796b99f056d3478f827cd1d2a2c166ba',1,'library.h']]]
 ];

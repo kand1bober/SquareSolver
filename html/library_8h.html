@@ -67,13 +67,14 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#enum-members">Enumerations</a>  </div>
+<a href="#enum-members">Enumerations</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">library.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Заголовочный файл с описанием классов  
+<p>MAin header file.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;iostream&gt;</code><br />
 <code>#include &lt;stdio.h&gt;</code><br />
@@ -86,7 +87,7 @@ Include dependency graph for library.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="library_8h__incl.png" border="0" usemap="#ainclude_2library_8h" alt=""/></div>
 <map name="ainclude_2library_8h" id="ainclude_2library_8h">
-<area shape="rect" title="Заголовочный файл с описанием классов" alt="" coords="221,5,347,32"/>
+<area shape="rect" title="MAin header file." alt="" coords="221,5,347,32"/>
 <area shape="rect" title=" " alt="" coords="5,80,85,107"/>
 <area shape="rect" title=" " alt="" coords="109,80,176,107"/>
 <area shape="rect" title=" " alt="" coords="201,80,269,107"/>
@@ -100,7 +101,7 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="library_8h__dep__incl.png" border="0" usemap="#ainclude_2library_8hdep" alt=""/></div>
 <map name="ainclude_2library_8hdep" id="ainclude_2library_8hdep">
-<area shape="rect" title="Заголовочный файл с описанием классов" alt="" coords="74,5,199,32"/>
+<area shape="rect" title="MAin header file." alt="" coords="74,5,199,32"/>
 <area shape="rect" href="input_8h_source.html" title=" " alt="" coords="5,80,124,107"/>
 <area shape="rect" href="solver_8h_source.html" title=" " alt="" coords="148,80,272,107"/>
 </map>
@@ -111,7 +112,7 @@ This graph shows which files directly or indirectly include this file:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structTest.html">Test</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">vggvgvgv  <a href="structTest.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">structure with fields describing quadratic equation  <a href="structTest.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCoeff.html">Coeff</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -120,21 +121,47 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:ac9051579cb1540b49d48ca33cdd7f9f3"><td class="memItemLeft" align="right" valign="top"><a id="ac9051579cb1540b49d48ca33cdd7f9f3"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>prog_errors</b> { <b>NO_ERRORS</b> = 0
+<tr class="memitem:ac9051579cb1540b49d48ca33cdd7f9f3"><td class="memItemLeft" align="right" valign="top"><a id="ac9051579cb1540b49d48ca33cdd7f9f3"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="library_8h.html#ac9051579cb1540b49d48ca33cdd7f9f3">prog_errors</a> { <b>NO_ERRORS</b> = 0
 , <b>ERROR_WRONG_COEFFS</b> = 1
  }</td></tr>
+<tr class="memdesc:ac9051579cb1540b49d48ca33cdd7f9f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">enumeration of errors in fuctions <br /></td></tr>
 <tr class="separator:ac9051579cb1540b49d48ca33cdd7f9f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1edd804c8a94bfd927e93caf172277a3"><td class="memItemLeft" align="right" valign="top"><a id="a1edd804c8a94bfd927e93caf172277a3"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>number_roots</b> { <b>INF_ROOTS</b> = -1
+<tr class="memitem:a1edd804c8a94bfd927e93caf172277a3"><td class="memItemLeft" align="right" valign="top"><a id="a1edd804c8a94bfd927e93caf172277a3"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="library_8h.html#a1edd804c8a94bfd927e93caf172277a3">number_roots</a> { <b>INF_ROOTS</b> = -1
 , <b>NO_ROOTS</b>
 , <b>ONE_ROOT</b>
 , <b>TWO_ROOTS</b>
  }</td></tr>
+<tr class="memdesc:a1edd804c8a94bfd927e93caf172277a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">enumeration of roots of quadratic equation <br /></td></tr>
 <tr class="separator:a1edd804c8a94bfd927e93caf172277a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a796b99f056d3478f827cd1d2a2c166ba"><td class="memItemLeft" align="right" valign="top">const double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="library_8h.html#a796b99f056d3478f827cd1d2a2c166ba">ACCURACY</a> = 1e-5</td></tr>
+<tr class="memdesc:a796b99f056d3478f827cd1d2a2c166ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constant of accuracy of comparing.  <a href="library_8h.html#a796b99f056d3478f827cd1d2a2c166ba">More...</a><br /></td></tr>
+<tr class="separator:a796b99f056d3478f827cd1d2a2c166ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Заголовочный файл с описанием классов </p>
-<p>Данный файл содержит в себе определения основных классов, используемых в демонстрационной программе </p>
-</div></div><!-- contents -->
+<div class="textblock"><p>MAin header file. </p>
+<p>It contains description of most classes used in this programm </p>
+</div><h2 class="groupheader">Variable Documentation</h2>
+<a id="a796b99f056d3478f827cd1d2a2c166ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a796b99f056d3478f827cd1d2a2c166ba">&#9670;&nbsp;</a></span>ACCURACY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const double ACCURACY = 1e-5</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constant of accuracy of comparing. </p>
+<p>Used in compare.cpp </p>
+
+</div>
+</div>
+</div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
