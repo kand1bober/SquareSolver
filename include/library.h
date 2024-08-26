@@ -15,6 +15,15 @@
 #include <assert.h>
 #include <string.h>
 
+#define DELETE_COLOR "\u001b[0m"
+#define GREEN "\u001b[32;1m"
+#define RED "\u001b[31;1m"
+#define YELLOW "\u001b[33;1m"
+#define PURPLE "\u001b[35;1m"
+#define WHITE "\u001b[37;1m"
+#define BLUE "\u001b[36;1m"
+#define SINIY "\u001b[34;1m"
+
 /// \brief Constant of accuracy of comparing
 /// \details Used in compare.cpp
 
@@ -68,4 +77,12 @@ struct Answer          //переменная root
     double x2;
 };
 
+// const struct Test test_arr[] =
+// {
+//     {1, 4, 3.98, -1.858579, -2.141421, 1},
+//     {1, 5,    6,        -2,        -3, 2},
+//     {-100, 0, 25, -0.5, 0.5, 2},
+//
+//     {1,    7,  6,    -1, -6, 2}
+// };
 #endif /* LIBRARY_HEADER */

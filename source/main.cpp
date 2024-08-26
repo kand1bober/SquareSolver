@@ -1,3 +1,9 @@
+/*!
+\file
+    \brief compare file
+
+
+*/
 
 #include "library.h"
 #include "solver.h"
@@ -7,21 +13,27 @@
 
 
 
+
 /*
-#ifdef CLEAN
+#ifdef DEBUG
     #define DEBUG_ASSERT(expr) assert(expr)
 #else
     #define DEBUG_ASSERT(expr)
 #endif
 */
 
+
+
+
+
+
 /**
 * gfytftyftygftygyt
     \brief hggfhg
     \param a, b, c -- Coefficients of square equation
 *\param[out] dest Целевая область памяти
-*\param[in] src Исходная область памяти
-*\param[in] n Количество байтов, которые необходимо скопировать
+*\param[in]  src  Исходная область памяти
+*\param[in]  n    Количество байтов, которые необходимо скопировать
 *
 *
 *
@@ -32,23 +44,17 @@ int main(int argc, char* argv[])
 {
     struct Coeff coef = {0, 0, 0};          // структура
     struct Answer root = {NO_ROOTS, 0, 0};
-    struct Test test_arr[] =
-    {
-        {1, 4, 3.98, -1.858579, -2.141421, 1},
-        {1, 5,    6,        -2,        -3, 2},
-        {-100, 0, 25, -0.5, 0.5, 2},
-        {1,    7,  6,    -1, -6, 2}
-    };
+
 
     if(argc == 2)
     {
         if(!strcmp(argv[1], "--help"))
-            {
-                printf("\n");
-                printf("\u001b[36;1mCommands:\u001b[0m\n");
-                printf("\u001b[33;1mType\u001b[0m --normal \u001b[33;1mfor usual input\n");
-                printf("Type\u001b[0m --test \u001b[33;1mto check test results\u001b[0m\n");
-            }
+        {
+            printf("\n");
+            printf(BLUE "Commands:\n" DELETE_COLOR);
+            printf(YELLOW "Type" DELETE_COLOR " --normal " YELLOW "for usual input\n");
+            printf("Type" DELETE_COLOR " --test " YELLOW "to check test results\n" DELETE_COLOR);
+        }
         if(!strcmp(argv[1], "--test"))
             driver(test_arr, sizeof(test_arr) / sizeof(test_arr[0]));
 
@@ -56,7 +62,7 @@ int main(int argc, char* argv[])
         {
             if(coef_input(&coef) != NO_ERRORS)                    //   ввод коэффициентов
             {
-                fprintf(stderr, "wrong coeffs\n");
+                fprintf(stderr, RED "wrong coeffs\n" DELETE_COLOR);
                 return NO_ERRORS;
 
             }
@@ -65,5 +71,5 @@ int main(int argc, char* argv[])
         }
     }
     else
-        printf("\u001b[35;1mWrong input\nType --help to see available commands\u001b[0m\n");
+        fprintf(stderr, RED "Wrong input\nType --help to see available commands\n" DELETE_COLOR);
 }

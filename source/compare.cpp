@@ -1,6 +1,12 @@
+/*!
+\file
+    \brief compare file
+
+
+*/
+
 #include "compare.h"
 #include "library.h"
-
 
 /**
     \brief Comparing two close double values

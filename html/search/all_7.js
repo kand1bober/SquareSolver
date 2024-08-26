@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['x1_5fexp_11',['x1_exp',['../structTest.html#a5fe642e7f97511726114bf5a17c4e363',1,'Test']]],
-  ['x2_5fexp_12',['x2_exp',['../structTest.html#a7b3daaa768037931b454c2bdf3336de6',1,'Test']]]
+  ['nroot_5fexp_13',['nroot_exp',['../structTest.html#a6cb6f03121c090b8cbf87105b6191c44',1,'Test']]],
+  ['number_5froots_14',['number_roots',['../library_8h.html#a1edd804c8a94bfd927e93caf172277a3',1,'library.h']]]
 ];

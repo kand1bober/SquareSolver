@@ -1,11 +1,19 @@
+/*!
+\file
+    \brief compare file
+
+
+*/
+
 /// \brief Test of soling equations
 #include "UnitTest.h"
-#include "library.h"
+//#include "library.h"
 #include "compare.h"
 #include "solver.h"
+#include "Tests.h"
 
 
-void driver(struct Test test_arr[], int size)
+void driver(const struct Test test_arr[], int size)
 {
     for(int y = 0; y <= size-1; y++)
         unit_test(test_arr[y], y);
@@ -39,12 +47,12 @@ void unit_test(struct Test unit, int y)                         //тест с в
 
     if(compare_small(unit.x1_exp, root_fake.x1) && unit.nroot_exp == root_fake.nroot  && compare_small(unit.x2_exp, root_fake.x2)) //
     {
-        printf("\u001b[32;1mTest%d correct\u001b[0m\n", num_test);
+        printf(GREEN "Test%d correct\n" DELETE_COLOR, num_test);
     }
     else
     {
-        printf("\u001b[31;1mTest%d: x1 = %lf, x2 = %lf Expected x1 = %lf, x2 = %lf\n"
-        "nroot = %d Expected nroot = %d \u001b[0m\n", num_test, root_fake.x1, root_fake.x2, unit.x1_exp, unit.x2_exp,
+        printf(RED "Test%d: x1 = %lf, x2 = %lf Expected x1 = %lf, x2 = %lf\n"
+        "nroot = %d Expected nroot = %d \n" DELETE_COLOR, num_test, root_fake.x1, root_fake.x2, unit.x1_exp, unit.x2_exp,
         root_fake.nroot, unit.nroot_exp);
     }
 }

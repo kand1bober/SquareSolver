@@ -1,5 +1,12 @@
+/*!
+\file
+    \brief compare file
+
+
+*/
+
 #include "solver.h"
-#include "library.h"
+//#include "library.h"
 #include "compare.h"
 
 number_roots solver(struct Coeff coef, struct Answer* root_ptr)

@@ -1,0 +1,59 @@
+\hypertarget{UnitTest_8cpp}{}\doxysection{source/\+Unit\+Test.cpp File Reference}
+\label{UnitTest_8cpp}\index{source/UnitTest.cpp@{source/UnitTest.cpp}}
+
+
+compare file  
+
+
+{\ttfamily \#include \char`\"{}Unit\+Test.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}compare.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}solver.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Tests.\+h\char`\"{}}\newline
+Include dependency graph for Unit\+Test.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{UnitTest_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{UnitTest_8cpp_a7b5e9a1eea457d13f71083a5200e80e7}\label{UnitTest_8cpp_a7b5e9a1eea457d13f71083a5200e80e7}} 
+void \mbox{\hyperlink{UnitTest_8cpp_a7b5e9a1eea457d13f71083a5200e80e7}{driver}} (const struct \mbox{\hyperlink{structTest}{Test}} test\+\_\+arr\mbox{[}$\,$\mbox{]}, int size)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{structTest}{Test}} of soling equations. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{UnitTest_8cpp_af6928f7571b5d7e4240a54b084f0585d}{unit\+\_\+test}} (struct \mbox{\hyperlink{structTest}{Test}} unit, int y)
+\begin{DoxyCompactList}\small\item\em In this function I spleat \mbox{\hyperlink{structTest}{Test}} structure into two\+: Coeffs and \mbox{\hyperlink{structAnswer}{Answer}}, and create constant of type Coeffs and variable of type \mbox{\hyperlink{structAnswer}{Answer}} to call function solver. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+compare file 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{UnitTest_8cpp_af6928f7571b5d7e4240a54b084f0585d}\label{UnitTest_8cpp_af6928f7571b5d7e4240a54b084f0585d}} 
+\index{UnitTest.cpp@{UnitTest.cpp}!unit\_test@{unit\_test}}
+\index{unit\_test@{unit\_test}!UnitTest.cpp@{UnitTest.cpp}}
+\doxysubsubsection{\texorpdfstring{unit\_test()}{unit\_test()}}
+{\footnotesize\ttfamily void unit\+\_\+test (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structTest}{Test}}}]{unit,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+In this function I spleat \mbox{\hyperlink{structTest}{Test}} structure into two\+: Coeffs and \mbox{\hyperlink{structAnswer}{Answer}}, and create constant of type Coeffs and variable of type \mbox{\hyperlink{structAnswer}{Answer}} to call function solver. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em unit} & -- variable of type \mbox{\hyperlink{structTest}{Test}} \\
+\hline
+{\em y} & -- itertion of the unit test \\
+\hline
+\end{DoxyParams}
+a in structure
+
+b in structure
+
+c in structure
+
+Solver can only take variable of type Coeffs and Answers

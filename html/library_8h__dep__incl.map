@@ -1,5 +1,12 @@
 <map id="include/library.h" name="include/library.h">
-<area shape="rect" id="node1" title="MAin header file." alt="" coords="74,5,199,32"/>
-<area shape="rect" id="node2" href="$input_8h_source.html" title=" " alt="" coords="5,80,124,107"/>
-<area shape="rect" id="node3" href="$solver_8h_source.html" title=" " alt="" coords="148,80,272,107"/>
+<area shape="rect" id="node1" title="MAin header file." alt="" coords="386,5,511,32"/>
+<area shape="rect" id="node2" href="$compare_8cpp.html" title="compare file" alt="" coords="5,80,159,107"/>
+<area shape="rect" id="node3" href="$main_8cpp.html" title="compare file" alt="" coords="376,155,505,181"/>
+<area shape="rect" id="node4" href="$output_8cpp.html" title="compare file" alt="" coords="326,80,465,107"/>
+<area shape="rect" id="node5" href="$input_8h_source.html" title=" " alt="" coords="183,80,301,107"/>
+<area shape="rect" id="node7" href="$solver_8h_source.html" title=" " alt="" coords="540,80,664,107"/>
+<area shape="rect" id="node10" href="$Tests_8h_source.html" title=" " alt="" coords="699,80,817,107"/>
+<area shape="rect" id="node6" href="$input_8cpp.html" title="compare file" alt="" coords="177,155,307,181"/>
+<area shape="rect" id="node8" href="$solver_8cpp.html" title="compare file" alt="" coords="529,155,664,181"/>
+<area shape="rect" id="node9" href="$UnitTest_8cpp.html" title="compare file" alt="" coords="689,155,838,181"/>
 </map>

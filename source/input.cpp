@@ -1,12 +1,20 @@
+/*!
+\file
+    \brief compare file
+
+
+*/
+
 #include "input.h"
-#include "library.h"
+//#include "library.h"
+
 
 prog_errors coef_input(struct Coeff* coef_ptr)                                           //ввод с клавы
 {
     assert(coef_ptr);
 
     printf("\n");
-    printf("Type coeffs in real numbers\u001b[0m\n");
+    printf(WHITE "Type coeffs in real numbers" DELETE_COLOR);
     int trash = -1;
     while(true)
     {
