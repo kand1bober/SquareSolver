@@ -8,15 +8,15 @@
 
 #include "library.h"
 
-/// \brief constant true values for test input to compare
+/// \brief array of constant true values for test input to compare
 ///  roots and number of roots that solver will calculate with pre-registered true values
-/// \details values:
-/// 1: a
-/// 2: b
-/// 3: c
-/// 4: expected first root
-/// 5: expected second root
-/// 6: expected number of roots
+/// \details values:\n
+/// 1: a\n
+/// 2: b\n
+/// 3: c\n
+/// 4: expected first roon\n
+/// 5: expected second root\n
+/// 6: expected number of roots\n
 
 const struct Test test_arr[] =
 {

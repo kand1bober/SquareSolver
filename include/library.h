@@ -27,13 +27,6 @@
 #define WHITE "\u001b[37;1m"
 #define BLUE "\u001b[36;1m"
 #define SINIY "\u001b[34;1m"
-//
-// #define PRINT(color, string)     \
-// ({                                \
-//     printf(color "string");         \
-// })                            \               // macro of color printing
-//
-//
 
 /// \brief Constant of accuracy of comparing
 /// \details Used in compare.cpp

@@ -12,9 +12,6 @@
 #include "UnitTest.h"
 #include "Tests.h"
 
-
-
-
 /*
 #ifdef DEBUG
     #define DEBUG_ASSERT(expr) assert(expr)
@@ -23,24 +20,8 @@
 #endif
 */
 
-
-
-
-
-
-/**
-* gfytftyftygftygyt
-    \brief hggfhg
-    \param a, b, c -- Coefficients of square equation
-*\param[out] dest Целевая область памяти
-*\param[in]  src  Исходная область памяти
-*\param[in]  n    Количество байтов, которые необходимо скопировать
-*
-*
-*
-*
-*/
-
+/// \brief main function
+/// \param a, b, c -- Coefficients of square equation
 int main(int argc, char* argv[])
 {
     struct Coeff coef = {0, 0, 0};          // структура
