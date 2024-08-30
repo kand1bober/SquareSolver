@@ -8,15 +8,17 @@
 #ifndef LIBRARY_HEADER
 #define LIBRARY_HEADER
 
-//#define NDEBUG
-
-#include <iostream>
+#include <stdlib.h>
 #include <stdio.h>
 #include <math.h>
 #include <stdbool.h>
 #include <assert.h>
 #include <string.h>
 #include <stdarg.h>
+
+#define ASSERTION
+#include "CustomAssert.h"
+ //кастомный ассерт только в cpp'шнике под эти хедером
 
 ///string constants for colors
 #define DELETE_COLOR "\u001b[0m"

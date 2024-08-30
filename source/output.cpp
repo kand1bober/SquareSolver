@@ -10,7 +10,7 @@
 /// \param print pointer to structure with abswers of quadratic equation
 void print_answer(struct Answer* print)
 {
-    assert(print);
+    ASSERT(print);
 
     switch(print->nroot)
     {

@@ -12,14 +12,6 @@
 #include "UnitTest.h"
 #include "Tests.h"
 
-/*
-#ifdef DEBUG
-    #define DEBUG_ASSERT(expr) assert(expr)
-#else
-    #define DEBUG_ASSERT(expr)
-#endif
-*/
-
 /// \brief main function
 /// \param a, b, c -- Coefficients of square equation
 int main(int argc, char* argv[])
@@ -42,7 +34,7 @@ int main(int argc, char* argv[])
 
         if(!strcmp(argv[1], "--normal"))
         {
-            if(coef_input(&coef) != NO_ERRORS)                    //   ввод коэффициентов
+            if(coef_input(/*&coef*/NULL) != NO_ERRORS)                    //   ввод коэффициентов
             {
                 fprintf(stderr, RED "wrong coeffs\n" DELETE_COLOR);
                 return NO_ERRORS;

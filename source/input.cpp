@@ -10,7 +10,7 @@
 /// \return returns --  enum value showing errors
 prog_errors coef_input(struct Coeff* coef_ptr)                                           //ввод с клавы
 {
-    assert(coef_ptr);
+    ASSERT(coef_ptr);
 
     printf("\n");
     printf(WHITE "Type coeffs in real numbers" DELETE_COLOR);
@@ -22,6 +22,6 @@ prog_errors coef_input(struct Coeff* coef_ptr)                                  
         else
             while((trash = getchar()) != '\n' && trash != EOF);
     }
-    assert(false);
+    ASSERT(false);
     return NO_ERRORS;
 }

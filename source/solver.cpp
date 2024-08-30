@@ -12,10 +12,10 @@
 /// \return returning amount of roots in enum value
 number_roots solver(struct Coeff coef, struct Answer* root_ptr)
 {
-    // assert(isfinite(a));
-    // assert(isfinite(b));
-    // assert(isfinite(c));
-    assert(root_ptr);       // root.ptr
+    // ASSERT(isfinite(a));
+    // ASSERT(isfinite(b));
+    // ASSERT(isfinite(c));
+    ASSERT(root_ptr);       // root.ptr
 
     if(compare_small(coef.a, 0))
     {
@@ -55,11 +55,11 @@ number_roots solver(struct Coeff coef, struct Answer* root_ptr)
 /// \return returs amount of roots based on value of discriminant
 int square_solver(struct Coeff coef, struct Answer* root_ptr)
 {
-    assert(isfinite(coef.a));
-    assert(isfinite(coef.b));
-    assert(isfinite(coef.c));
-    assert(root_ptr);
-    assert(root_ptr);
+    ASSERT(isfinite(coef.a));
+    ASSERT(isfinite(coef.b));
+    ASSERT(isfinite(coef.c));
+    ASSERT(root_ptr);
+    ASSERT(root_ptr);
 
     double D = (coef.b * coef.b) - 4 * coef.a * coef.c;
 

@@ -15,10 +15,10 @@
 /// \param size number of structures in array
 void driver(const struct Test test_arr[], int size)
 {
-    for(int y = 0; y <= size-1; y++)
+    for(int y = 0; y < size; y++)
     {
         unit_test(test_arr[y], y);
-        assert(y < size);
+        ASSERT(y < size);
     }
 }
 
